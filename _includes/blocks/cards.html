@@ -3,46 +3,49 @@
 
     {% if block.section-heading_html %}
 
-    <div class="pb-8 text-center featured-text font-extrabold uppercase tracking-wide">{{block.section-heading_html}}</div>
+    <div class="pb-8 text-center">{{block.section-heading_html}}</div>
 
     {% endif %}
-    {% for item in item %}
-    {% if item.button-link == page.url %}
-    {% assign small-grid = true %}
-    {% endif %}
-    {% endfor %}
-    <div class="gap-10 pt-10 grid {% if small-grid %} md:grid-cols-3 {% else %} md:grid-cols-2 lg:grid-cols-4 {% endif %}">
-    
 
-      {% for item in item %}
-      {% unless item.button-link == page.url %}
-        <!-- Card Loop -->
-        <div class="bg-[var(--base-color)] ">
-          <!-- Image -->
-          {% if item.image %}
-          <div class="{% if item.short-description_html %} info-card-container {% endif %} relative">
-            <img class="aspect-square object-cover w-full info-card-image" src="{{item.image}}" alt="{{item.alt}}">
-          </div>
-          {% endif %}
-
-          <!-- Text -->
-          <div class="p-5 sm:p-8 pb-8 {% if block.text-alignment == 'left' %} text-left {% elsif block.text-alignment == 'center' %} text-center {% elsif block.text-alignment == 'right' %} text-right {% endif %} ">
-            <h3 class="featured-text font-semibold py-2 text-xl">{{item.heading}}</h3>
-
-            {% if item.short-description_html %}
-            <p class="">{{item.short-description_html}}</p>
-            {% endif %}
-
-            {% if item.button-link and item.button-text %}
-            <a href="{{item.button-link}}" class="text-sm font-semibold uppercase tracking-wide"> {{item.button-text}} &#10143;</a>
-            {% endif %}
-
-          </div>
-        </div>
-      {% endunless %}
+    <div class="grid grid-cols-3">
+      {% for item in card-loop %}
+      {% if item.button-link == page.url %}
+      {% assign small-grid = true %}
+      {% endif %}
       {% endfor %}
+      <div class="gap-10 pt-10 grid {% if small-grid %} md:grid-cols-3 {% else %} md:grid-cols-2 lg:grid-cols-4 {% endif %}">
+      
 
+        {% for item in card-loop %}
+        {% unless item.button-link == page.url %}
+          <!-- Card Loop -->
+          <div class="">
+            <!-- Image -->
+            {% if item.image %}
+            <div class="{% if item.short-description_html %} info-card-container {% endif %} relative">
+              <img class="aspect-square object-cover w-full info-card-image" src="{{item.image}}" alt="{{item.alt}}">
+            </div>
+            {% endif %}
+
+            <!-- Text -->
+            <div class="p-5 sm:p-8 pb-8 {% if block.text-alignment == 'left' %} text-left {% elsif block.text-alignment == 'center' %} text-center {% elsif block.text-alignment == 'right' %} text-right {% endif %} ">
+              <h3 class="featured-text font-semibold py-2 text-xl">{{item.heading}}</h3>
+
+              {% if item.short-description_html %}
+              <p class="">{{item.short-description_html}}</p>
+              {% endif %}
+
+              {% if item.button-link and item.button-text %}
+              <a href="{{item.button-link}}" class="text-sm font-semibold uppercase tracking-wide"> {{item.button-text}} &#10143;</a>
+              {% endif %}
+
+            </div>
+          </div>
+        {% endunless %}
+        {% endfor %}
+
+      </div>
     </div>
-  
+
   </div>
 </section>
