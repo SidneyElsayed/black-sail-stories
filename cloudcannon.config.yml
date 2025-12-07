@@ -86,6 +86,20 @@ _inputs:
         - center
         - right
     cascade: true
+  scheme-name:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - base
+        - dark
+        - featured
+        - brown
+    label: Color scheme for the block
+    comment: >-
+      Choose which background color to use, then the text, button and highlight
+      colors will be chosen automatically
+    cascade: true
 
 _structures:
   blocks:
