@@ -535,8 +535,14 @@ video {
 .h-full {
     height: 100%;
 }
+.w-1\/2 {
+    width: 50%;
+}
 .w-3 {
     width: 0.75rem;
+}
+.w-\[80\%\] {
+    width: 80%;
 }
 .w-full {
     width: 100%;
@@ -572,11 +578,17 @@ video {
 .grid-cols-6 {
     grid-template-columns: repeat(6, minmax(0, 1fr));
 }
+.place-content-center {
+    place-content: center;
+}
 .justify-center {
     justify-content: center;
 }
 .justify-between {
     justify-content: space-between;
+}
+.gap-10 {
+    gap: 2.5rem;
 }
 .gap-2 {
     gap: 0.5rem;
@@ -603,6 +615,13 @@ video {
 .rounded-2xl {
     border-radius: 1rem;
 }
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.rounded-t-lg {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
 .border {
     border-width: 1px;
 }
@@ -621,6 +640,9 @@ video {
 .border-black {
     --tw-border-opacity: 1;
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+.bg-\[var\(--base-color\)\] {
+    background-color: var(--base-color);
 }
 .bg-\[var\(--bg-color\)\] {
     background-color: var(--bg-color);
@@ -705,6 +727,9 @@ video {
 .pb-6 {
     padding-bottom: 1.5rem;
 }
+.pb-8 {
+    padding-bottom: 2rem;
+}
 .pr-12 {
     padding-right: 3rem;
 }
@@ -713,6 +738,9 @@ video {
 }
 .pt-0 {
     padding-top: 0px;
+}
+.pt-10 {
+    padding-top: 2.5rem;
 }
 .pt-8 {
     padding-top: 2rem;
@@ -733,6 +761,10 @@ video {
 .text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
+}
+.text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
 }
 .text-xl {
     font-size: 1.25rem;
@@ -982,6 +1014,9 @@ input:focus, textarea:focus {
     .sm\:p-6 {
         padding: 1.5rem;
     }
+    .sm\:p-8 {
+        padding: 2rem;
+    }
     .sm\:px-16 {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -1009,6 +1044,9 @@ input:focus, textarea:focus {
     .md\:grid-cols-2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
     .md\:grid-cols-6 {
         grid-template-columns: repeat(6, minmax(0, 1fr));
     }
@@ -1028,6 +1066,9 @@ input:focus, textarea:focus {
     }
     .lg\:grid-cols-3 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
     .lg\:gap-8 {
         gap: 2rem;
