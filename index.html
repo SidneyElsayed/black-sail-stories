@@ -3,13 +3,14 @@ layout: default
 blocks:
   - id: banner
     text-html: <h1><em>Black Sail Stories</em></h1>
-    height: 75vh
-    width: 33%
+    height: 70vh
+    width: 100%
     horizontal-placement: center
     vertical-placement: center
     text-alignment: center
     image: /images/sea.jpg
     alt:
+    scheme-name: dark
     overlay:
       color:
       opacity:
@@ -18,6 +19,7 @@ blocks:
       direction: English
       speed: 50
       text-size:
+      scheme-name:
     banner-message:
       - text: Developmental Editing
         url: /services#section-1
@@ -25,10 +27,24 @@ blocks:
         url: /services#section-2
       - text: Ghost Writing
         url: /services#section-3
+  - id: split-banner 
+    text_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+    height: 95vh
+    width: 50%
+    horizontal-placement: center
+    vertical-placement: center
+    text-alignment: center
+    image: https://picsum.photos/id/1025/600/400
+    alt:
+    overlay:
+      color: 
+      opacity: 
+    scheme-name:
   - id: accordion
     section-heading: This is a heading
     heading-text-alignment: left
     faq-text-alignment: left
+    scheme-name:
     faq-loop:
       - question: Do you have a question?
         answer-html: >-

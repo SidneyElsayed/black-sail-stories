@@ -67,7 +67,7 @@ _inputs:
       styles: /editor.css
     label: Content
     cascade: true
-  min-height:
+  height:
     type: select
     options:
       allow_empty: true
@@ -76,6 +76,34 @@ _inputs:
         75vh: three quater screen min-height
         90vh: just short of full screen
         100vh: full screen
+    cascade: true
+  width:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        30%: one-third
+        50%: half
+        80%: just short of full width
+        100%: full width
+    cascade: true
+  horizontal-placement:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - left
+        - center
+        - right
+    cascade: true
+  vertical-placement:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - top
+        - center
+        - bottom
     cascade: true
   text-alignment:
     type: select
@@ -109,28 +137,104 @@ _structures:
         value:
           id: rich-text 
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
-          height: 95vh
-          width: 33%
+          height: 40vh
+          width: 100%
           horizontal-placement: center
           vertical-placement: center
           text-alignment: center
-          scheme-color: dark
+          scheme-name: dark
       - label: banner
         value:
           id: banner 
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
-          height: 95vh
-          width: 33%
+          height: 80vh
+          width: 100%
           horizontal-placement: center
           vertical-placement: center
           text-alignment: center
           image: https://picsum.photos/id/1025/600/400
           alt:
+          scheme-name:
           overlay:
             color: 
             opacity: 
-  
-  
+      - label: accordion
+        value:
+          id: accordion
+          section-heading: This is a heading
+          heading-text-alignment: left
+          faq-text-alignment: left
+          faq-loop:
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+            - question: Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              answer-html: Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe, delectus, dolorem consequatur autem fugit.
+          scheme-name:
+      - label: form
+        value:
+        id: form
+        button-alignment: center
+        submit-button-text: Submit
+        inputs:
+        - type: text
+          name: First name
+          label: First name
+          placeholder-text: John
+          width: half
+          required: true
+        - type: text
+          name: Last name
+          label: Last name
+          placeholder-text: Smith
+          width: half
+          required: true
+        - type: email
+          name: Email
+          label: Your Email
+          placeholder-text: yourname@gmail.com
+          width: full
+          required: true
+        - type: phone
+          name: Phone
+          label: Cell phone
+          placeholder-text: 612-555-5555
+          width: full
+          required: false
+        - form-type: checkbox
+          label: >-
+            I would be interested in volunteering for the following (check all
+            that apply):
+          width: full
+          boxes:
+            - checkbox-option: Angel Pack™ Packing Party
+            - checkbox-option: Special Events
+            - checkbox-option: Certified Financial Planner® for Financial Cancer Care
+            - checkbox-option: Making Memories
+            - checkbox-option: Internship
+        - type: textarea
+          name: Inquiry
+          label: Your message here
+          placeholder-text: Add placeholder text here...
+          width: full
+          required: true
+        scheme-name:
+      - label: ticker-banner
+        value:
+        id: ticker-banner
+        banner-style:
+          direction: English
+          speed: 50
+          text-size:
+        banner-message:
+        - text: Lorem ipsum dolor sit!
+          url:
+        - text: Doloribus incidunt beatae!
+          url:
+        - text: Dexercitationem reiciendis!
+          url:
+        scheme-name:
   
   
   header_links:
