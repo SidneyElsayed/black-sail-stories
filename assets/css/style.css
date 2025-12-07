@@ -860,14 +860,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Italic for cursive hack */
 h1 em {
   font-family: "Babylonica", cursive;
+  font-size: 6rem;
 }
 
 h2 em {
   font-family: "Babylonica", cursive;
+  font-size: 4rem;
 }
 
 h3 em {
   font-family: "Babylonica", cursive;
+  font-size: 3rem;
 }
 
 h2:last-child, 
