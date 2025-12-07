@@ -3,14 +3,14 @@ layout: default
 blocks:
   - id: banner
     text-html: <h1><em>Black Sail Stories</em></h1>
-    height: 70vh
+    height: 75vh
     width: 100%
     horizontal-placement: center
     vertical-placement: center
     text-alignment: center
     image: /images/sea.jpg
     alt:
-    scheme-name: dark
+    scheme-name: base
     overlay:
       color:
       opacity:
@@ -27,8 +27,12 @@ blocks:
         url: /services#section-2
       - text: Ghost Writing
         url: /services#section-3
-  - id: split-banner 
-    text_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
+  - id: split-banner
+    text_html: >-
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+      deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat
+      magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat
+      cumque itaque possimus dolore?
     height: 95vh
     width: 50%
     horizontal-placement: center
@@ -37,14 +41,13 @@ blocks:
     image: https://picsum.photos/id/1025/600/400
     alt:
     overlay:
-      color: 
-      opacity: 
+      color:
+      opacity:
     scheme-name:
   - id: accordion
     section-heading: This is a heading
     heading-text-alignment: left
     faq-text-alignment: left
-    scheme-name:
     faq-loop:
       - question: Do you have a question?
         answer-html: >-
@@ -63,6 +66,7 @@ blocks:
           Harum tempora rerum debitis! Quo fugiat eius accusamus suscipit
           dignissimos aspernatur aliquid nisi repellat expedita veritatis saepe,
           delectus, dolorem consequatur autem fugit.
+    scheme-name:
 seo:
   title:
   description:
