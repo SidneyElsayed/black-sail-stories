@@ -6,42 +6,41 @@ header-links:
   - text: Services
     url: /services
     sublinks:
-    - text: Developmental Editing
-      url: /services#section-3
-    - text: Book Coaching
-      url: /services#section-2
-    - text: Ghost Writing
-      url: /services#section-1
+      - text: Developmental Editing
+        url: /services#section-1
+      - text: Book Coaching
+        url: /services#section-2
+      - text: Ghost Writing
+        url: /services#section-3
   - text: Contact Us
     url: /contact
   - text: Blog
     url: /blog
-
 footer-links:
   - heading: Develop Your Skills
     links:
-    - text: Manuscript Evaluation
-      url: /
-    - text: Developmental Editing
-      url: /
-    - text: Book Coaching
-      url: /
+      - text: Manuscript Evaluation
+        url: /
+      - text: Developmental Editing
+        url: /
+      - text: Book Coaching
+        url: /
   - heading: Done For You
     links:
-    - text: Ghost Writing
-      url: /
-    - text: Custom Projects
-      url: /
-    - text: Retainer Packages
-      url: /
+      - text: Ghost Writing
+        url: /
+      - text: Custom Projects
+        url: /
+      - text: Retainer Packages
+        url: /
   - heading: About
     links:
-    - text: About Us
-      url: /
-    - text: Blog
-      url: /
-    - text: Contact Us
-      url: /
+      - text: About Us
+        url: /about
+      - text: Blog
+        url: /blog
+      - text: Contact Us
+        url: /contact
 footer-contact:
   heading: Company Name
   map-link: maps.google.com
