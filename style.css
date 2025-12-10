@@ -142,7 +142,7 @@ a {
 
 .button-featured {
     background-color: var(--featured-color);
-    color: var(--bg-color);
+    color: var(--text-color);
     display: block;
 }
 

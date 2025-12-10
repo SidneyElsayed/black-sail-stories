@@ -606,9 +606,6 @@ video {
 .whitespace-pre {
     white-space: pre;
 }
-.rounded-2xl {
-    border-radius: 1rem;
-}
 .border {
     border-width: 1px;
 }
@@ -953,7 +950,7 @@ a {
 
 .button-featured {
     background-color: var(--featured-color);
-    color: var(--bg-color);
+    color: var(--text-color);
     display: block;
 }
 
@@ -981,8 +978,16 @@ input:focus, textarea:focus {
 .hover\:text-\[var\(--featured-color\)\]:hover {
     color: var(--featured-color);
 }
-.focus\:bg-\[var\(--featured-color\)\]:focus {
-    background-color: var(--featured-color);
+.focus\:bg-\[var\(--bg-secondary-color\)\]:focus {
+    background-color: var(--bg-secondary-color);
+}
+.focus\:placeholder-white:focus::-moz-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+.focus\:placeholder-white:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 .group:hover .group-hover\:block {
     display: block;
