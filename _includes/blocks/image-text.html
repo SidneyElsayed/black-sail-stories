@@ -7,7 +7,7 @@
   <!-- Section Heading -->
   {% if block.section-heading_html %}
 
-  <div class="pb-12 featured-text font-extrabold uppercase tracking-wide 
+  <div class="pb-12
   
   {% if block.large-text-alignment == 'left' %} text-left {% elsif block.large-text-alignment == 'center' %} text-center {% elsif block.large-text-alignment == 'right' %} text-right {% endif %}
   
@@ -18,7 +18,7 @@
   
   <div class="grid grid-cols-2">
     <!-- Image -->
-    <div class="col-span-2 lg:col-span-1 relative lg:mr-12"> 
+    <div class="col-span-2 lg:col-span-1 relative lg:mr-12 aspect-square"> 
         <img class="absolute inset-0 h-full w-full z-10 object-cover object-center" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt | default: block.caption}}">
     </div>
 
