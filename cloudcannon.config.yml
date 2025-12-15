@@ -72,6 +72,7 @@ _inputs:
     options:
       allow_empty: true
       values:
+        30vh: one third screen
         50vh: half screen 
         75vh: three quaters screen
         90vh: just short of full screen

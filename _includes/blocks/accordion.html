@@ -7,16 +7,16 @@
     {% for faq in block.faq-loop %}
     <div class="question-block faq-text-alignment border border-[var(--text-color)] {% if forloop.first %} {% else %} border-t-0 {% endif %} border-b-0">
       <div class="p-5">
-        <h3 class="relative text-bold">
+        <h4 class="relative">
           {{faq.question}}
           <div class="absolute faq-icon w-3 h-4 top-0 right-0">
             <span class="block border-b-2 border-[var(--text-color)] w-3 leading-none"></span>
             <span class="block border-b-2 border-[var(--text-color)] relative top-[-1.4px] w-3 leading-none transition-all duration-1000 ease-out rotate-90"></span>
           </div>
-        </h3>
+        </h4>
       </div>
     </div>
-    <div class="text-thin border border-[var(--text-color)] border-t-0  overflow-hidden transition-all duration-1000" style="max-height: 0px;">
+    <div class="border border-[var(--text-color)] border-t-0  overflow-hidden transition-all duration-1000" style="max-height: 0px;">
       <div class="px-5 pb-5 answer-content">
         {{faq.answer-html}}
       </div>

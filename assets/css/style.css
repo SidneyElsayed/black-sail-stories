@@ -737,6 +737,9 @@ video {
 .pb-0 {
     padding-bottom: 0px;
 }
+.pb-10 {
+    padding-bottom: 2.5rem;
+}
 .pb-12 {
     padding-bottom: 3rem;
 }
@@ -778,9 +781,6 @@ video {
 }
 .pt-8 {
     padding-top: 2rem;
-}
-.pb-10 {
-    padding-bottom: 2.5rem;
 }
 .text-left {
     text-align: left;
@@ -870,6 +870,10 @@ video {
 }
 .ease-out {
     transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Custom CSS */
