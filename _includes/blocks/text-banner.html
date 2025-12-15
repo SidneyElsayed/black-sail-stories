@@ -5,7 +5,7 @@
   <div class="grid grid-cols-2 gap-16 px-8 sm:px-16 py-24">
     <!-- Large Text -->
     {% if block.heading_html %}
-    <div class="">
+    <div class="
 
     {% if block.large-text-width == 'full' %} col-span-2 {% elsif block.large-text-width == 'half' %} col-span-2 md:col-span-1 {% endif %}
 
@@ -24,7 +24,7 @@
     
     {% if block.paragraph-text-alignment == 'left' %} text-left {% elsif block.paragraph-text-alignment == 'center' %} text-center {% elsif block.paragraph-text-alignment == 'right' %} text-right {% endif %}">
       {% if block.text_html %}
-        <p class="{% if block.heading %} pt-2 {% else %} pt-0 {% endif %} font-thin block">{{block.text_html}}</p>
+        <p class="{% if block.heading %} pt-2 {% else %} pt-0 {% endif %} block">{{block.text_html}}</p>
       {% endif %}
 
 

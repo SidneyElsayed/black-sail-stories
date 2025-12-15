@@ -1,6 +1,22 @@
 ---
 layout: default
 title: Blog | Your Website
+blocks:
+  - id: text-banner
+    heading_html: Exciting Title
+    text_html: Roccaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+    large-text-width: full
+    paragraph-width: full
+    large-text-placement: center
+    large-text-alignment: center
+    paragraph-text-alignment: center
+    button-alignment:
+    button-1-text:
+    button-1-link:
+    button-2-text:
+    button-2-link:
+    scheme-name: dark
+  - id: small-blog-posts
 seo:
   title: Blog | Your Website
   description: >-
@@ -9,45 +25,5 @@ seo:
   twitter_card:
   keywords: 
   hide-from-google: false
+
 ---
-<!------------------------ Split blog loop (part 1) ------------------------>
-<section class="p-12">
-
-    <div class="p-12 pt-0 mb-1 text-center">
-      <h2 class=""> Exciting Title </h2>
-      <p class=""> Roccaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.  Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
-    </div>
-
-    <div class="grid grid-cols-2">
-
-        {% for post in site.posts limit:100 %}
-
-
-        <div class="grid grid-cols-5 col-span-2 md:col-span-1 post-item p-10">
-            <!-- Clickable Image -->
-            <div class="col-span-2 aspect-square self-center">
-                <a class="" href="{{ post.url }}">
-                    <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
-                </a>
-            </div>
-
-            <div class="col-span-3">
-            <!-- Clickable Tags -->
-            {% for item in post.categories limit: post.categories-shown %}
-                <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
-            {% endfor %}
-                <!-- Clickable Text -->
-                <a class="" href="{{ post.url }}">
-                    <h4 class="mt-2 mb-4 featured-font"> {{ post.title }} </h4>
-                    <p class="subtitle hidden sm:block"> {{ post.description }} </p>
-                </a>
-        
-            </div>
-        </div>
-
-
-        {% endfor %}
-
-    </div>
-
-</section>
