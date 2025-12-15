@@ -130,6 +130,17 @@ _inputs:
         - 90%
         - 100%
     cascade: true
+  button-alignment:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - right
+        - center
+        - left
+    label: Button placement
+    comment: Choose where the button is placed in relation to the form
+    cascade: true
   scheme-name:
     type: select
     options:
@@ -174,6 +185,22 @@ _structures:
           overlay:
             color: 
             opacity: 
+      - label: text banner
+        value:
+          id: text-banner
+          heading_html:
+          text_html:
+          large-text-width:
+          paragraph-width:
+          large-text-placement:
+          large-text-alignment:
+          paragraph-text-alignment:
+          button-alignment:
+          button-1-text:
+          button-1-link:
+          button-2-text:
+          button-2-link:
+          scheme-name:
       - label: accordion
         value:
           id: accordion
@@ -224,9 +251,8 @@ _structures:
               that apply):
             width: full
             boxes:
-              - checkbox-option: Angel Pack™ Packing Party
+              - checkbox-option: Packing Party
               - checkbox-option: Special Events
-              - checkbox-option: Certified Financial Planner® for Financial Cancer Care
               - checkbox-option: Making Memories
               - checkbox-option: Internship
           - type: textarea
