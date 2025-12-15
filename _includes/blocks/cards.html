@@ -17,12 +17,12 @@
           <img class="aspect-square object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
         </div>
         <div class="p-4">
-          <h3 class="py-4">{{item.heading}}</h3>
-          <p class="pb-4">{{item.text}}</p>
+          <h4 class="py-4">{{item.heading}}</h4>
+          <p class="">{{item.text}}</p>
 
           {% if item.button-link and item.button-text %}
 
-          <a href="{{item.button-link}}" class="button"> {{item.button-text}} </a>
+          <a href="{{item.button-link}}" class="button-subtle text-sm"> {{item.button-text}} &#8594; </a>
 
           {% endif %}
 

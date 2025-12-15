@@ -146,6 +146,14 @@ a {
     display: block;
 }
 
+.button-subtle {
+  color: var(--bg-secondary-color);
+}
+
+.button-subtle:hover {
+  color: var(--text-color);
+}
+
 /* Form Styles */
 
 input, textarea {
