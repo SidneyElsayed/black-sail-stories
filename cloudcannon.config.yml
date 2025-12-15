@@ -87,6 +87,49 @@ _inputs:
         80%: just short of full width
         100%: full width
     cascade: true
+  image-horizontal-focal-point:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - center
+        - left
+        - right
+    label: Horizontal image focal point
+    comment: Choose where the focus/positioning of the image should be
+    cascade: true
+  image-vertical-focal-point:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - center
+        - top
+        - bottom
+    label: Vertical image focal point
+    comment: Choose where the focus/positioning of the image should be
+    cascade: true
+  image-placement:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - left
+        - right
+    label: Image placement
+    comment: Choose whether the image is on the left or right
+    cascade: true
+  text-placement:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - top
+        - center
+        - bottom
+    label: Text placement
+    comment: Choose where the text is placed in relation to the image or paragraph text
+    cascade: true
   horizontal-placement:
     type: select
     options:
