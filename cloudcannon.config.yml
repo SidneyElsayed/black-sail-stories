@@ -114,6 +114,18 @@ _inputs:
         - center
         - right
     cascade: true
+  large-text-placement:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - right
+        - left
+    label: Large text placement
+    comment: >-
+      Choose whether the large text is on the left or right. If text will be
+      full width, choose left here.
+    cascade: true
   large-text-alignment:
     type: select
     options:
