@@ -1,51 +1,36 @@
-<section id="section-{{forloop.index}}">
-  <div class="max-width mx-auto">
+<!-- Cards with Border Section -->
+<section class="py-28 border-y border-featured">
 
-    {% if block.section-heading_html %}
+  {% if block.section-heading %}
 
-    <div class="pb-8 text-center">{{block.section-heading_html}}</div>
+  <h2 class="px-8 sm:px-16 pb-6">{{block.section-heading}}</h2>
 
-    {% endif %}
+  {% endif %}
 
-    <div class="grid grid-cols-3">
-      {% for item in card-loop %}
-      {% if item.button-link == page.url %}
-      {% assign small-grid = true %}
-      {% endif %}
-      {% endfor %}
-      <div class="gap-10 pt-10 grid {% if small-grid %} md:grid-cols-3 {% else %} md:grid-cols-2 lg:grid-cols-4 {% endif %}">
-      
+  <div class="gap-6 px-16 {% if items.size > 3 %} flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %}">
 
-        {% for item in card-loop %}
-        {% unless item.button-link == page.url %}
-          <!-- Card Loop -->
-          <div class="">
-            <!-- Image -->
-            {% if item.image %}
-            <div class="{% if item.short-description_html %} info-card-container {% endif %} relative">
-              <img class="aspect-square object-cover w-full info-card-image" src="{{item.image}}" alt="{{item.alt}}">
-            </div>
-            {% endif %}
+    {% for item in block.card-loop %}
 
-            <!-- Text -->
-            <div class="p-5 sm:p-8 pb-8 {% if block.text-alignment == 'left' %} text-left {% elsif block.text-alignment == 'center' %} text-center {% elsif block.text-alignment == 'right' %} text-right {% endif %} ">
-              <h3 class="featured-text font-semibold py-2 text-xl">{{item.heading}}</h3>
+      <!-- Card Loop -->
+      <div class="{% if item.size > 3 %} basis-[30%] shrink-0 {% else %} col-span-3 {% endif %}">
+        <div class="">
+          <img class="aspect-square object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
+        </div>
+        <div class="p-4">
+          <h3 class="py-4">{{item.heading}}</h3>
+          <p class="pb-4">{{item.text}}</p>
 
-              {% if item.short-description_html %}
-              <p class="">{{item.short-description_html}}</p>
-              {% endif %}
+          {% if item.button-link and item.button-text %}
 
-              {% if item.button-link and item.button-text %}
-              <a href="{{item.button-link}}" class="text-sm font-semibold uppercase tracking-wide"> {{item.button-text}} &#10143;</a>
-              {% endif %}
+          <a href="{{item.button-link}}" class="button"> {{item.button-text}} </a>
 
-            </div>
-          </div>
-        {% endunless %}
-        {% endfor %}
+          {% endif %}
 
+        </div>
       </div>
-    </div>
+    
+    {% endfor %}
 
-  </div>
+</div>
+
 </section>
