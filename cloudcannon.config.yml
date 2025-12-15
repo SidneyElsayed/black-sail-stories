@@ -72,8 +72,8 @@ _inputs:
     options:
       allow_empty: true
       values:
-        50vh: half screen min-height
-        75vh: three quater screen min-height
+        50vh: half screen 
+        75vh: three quaters screen
         90vh: just short of full screen
         100vh: full screen
     cascade: true
@@ -114,6 +114,22 @@ _inputs:
         - center
         - right
     cascade: true
+  opacity:
+    type: select
+    options:
+      allow_empty: true
+      values:
+        - 10%
+        - 20%
+        - 30%
+        - 40%
+        - 50%
+        - 60%
+        - 70%
+        - 80%
+        - 90%
+        - 100%
+    cascade: true
   scheme-name:
     type: select
     options:
@@ -143,9 +159,9 @@ _structures:
           vertical-placement: center
           text-alignment: center
           scheme-name: dark
-      - label: banner
+      - label: photo-banner
         value:
-          id: banner 
+          id: photo-banner 
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
           height: 80vh
           width: 100%
