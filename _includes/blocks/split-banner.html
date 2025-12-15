@@ -1,11 +1,16 @@
 <section id="section-{{forloop.index}}" class="relative">
-  <img src="{{block.image}}" alt="{{block.alt}}" class="absolute inset-0 w-full h-full object-cover">
-  {% unless block.overlay.opacity == 0 %}
-  <div class="overlay absolute inset-0 w-1/2 h-full"></div>
-  {% endunless %}
-  <div class="max-width mx-auto relative">
-    <div class="flex content-mover">
-      <div class="content-block">{{block.text_html}}</div>
+  <div class="col-span-2 md:col-span-1">
+    <img src="{{block.image}}" alt="{{block.alt}}" class="absolute inset-0 w-1/2 h-full object-cover">
+    {% unless block.overlay.opacity == 0 %}
+    <div class="overlay absolute inset-0 w-1/2 h-full"></div>
+    {% endunless %}
+  </div>
+  
+  <div class="col-span-2 md:col-span-1">
+    <div class="w-1/2 mx-auto relative">
+      <div class="flex content-mover">
+        <div class="content-block">{{block.text_html}}</div>
+      </div>
     </div>
   </div>
 </section>
