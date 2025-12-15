@@ -1,7 +1,7 @@
 <section id="section-{{forloop.index}}">
   <div class="max-width mx-auto">
     {% if block.section-heading %}
-      <div class="content-block">{{block.section-heading}}</div>
+      <h2 class="">{{block.section-heading_html}}</div>
     {% endif %}
 
     {% for faq in block.faq-loop %}
@@ -76,7 +76,7 @@
 
 <!-- FRONT MATTER REFERENCE -->
 - id: accordion
-  section-heading: This is a heading
+  section-heading_html: This is a heading
   heading-text-alignment: left
   faq-text-alignment: left
   faq-loop:

@@ -299,7 +299,7 @@ _structures:
       - label: accordion
         value:
           id: accordion
-          section-heading: This is a heading
+          section-heading_html: This is a heading
           heading-text-alignment: left
           faq-text-alignment: left
           faq-loop:
