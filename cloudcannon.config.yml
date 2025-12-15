@@ -114,6 +114,24 @@ _inputs:
         - center
         - right
     cascade: true
+  large-text-alignment:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - left
+        - center
+        - right
+    cascade: true
+  paragraph-text-alignment:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - left
+        - center
+        - right
+    cascade: true
   opacity:
     type: select
     options:
@@ -140,6 +158,28 @@ _inputs:
         - left
     label: Button placement
     comment: Choose where the button is placed in relation to the form
+    cascade: true
+  large-text-width:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - half
+        - full
+    label: Large text width
+    comment: Choose whether the large text takes up half or the full width of the page
+    cascade: true
+  paragraph-width:
+    type: select
+    options:
+      allow_empty: false
+      values:
+        - half
+        - full
+    label: Paragraph text width
+    comment: >-
+      Choose whether the paragraph text takes up half or the full width of the
+      page
     cascade: true
   scheme-name:
     type: select
