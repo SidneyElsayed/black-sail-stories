@@ -222,7 +222,7 @@ _structures:
           vertical-placement: center
           text-alignment: center
           scheme-name: dark
-      - label: photo-banner
+      - label: photo banner
         value:
           id: photo-banner 
           text-html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deserunt, doloribus incidunt beatae id distinctio consectetur aut fugiat magnam, nam maiores exercitationem reiciendis molestiae tempora quaerat cumque itaque possimus dolore?
@@ -231,7 +231,7 @@ _structures:
           horizontal-placement: center
           vertical-placement: center
           text-alignment: center
-          image: https://picsum.photos/id/1025/600/400
+          image: 
           alt:
           scheme-name:
           overlay:
@@ -314,7 +314,7 @@ _structures:
             width: full
             required: true
           scheme-name:
-      - label: ticker-banner
+      - label: ticker banner
         value:
           id: ticker-banner
           banner-style:
@@ -354,6 +354,10 @@ _structures:
             button-link: /services#section-3
             image: /images/keys.jpg
             alt: 
+          scheme-name: base
+      - label: small blog posts
+        value:
+          id: small-blog-posts
           scheme-name: base
   
   
