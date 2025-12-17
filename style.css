@@ -139,15 +139,14 @@ a {
 
 /* Button Classes */
 
-.button {
-    border: 1px solid var(--featured-color);
-    color: var(--featured-color);
+.button-1 {
+  background-color: var(--button-1-bg);
+  color: var(--button-1-text-color);
 }
 
-.button-featured {
-    background-color: var(--featured-color);
-    color: var(--text-color);
-    display: block;
+.button-2 {
+  background-color: var(--button-2-bg);
+  color: var(--button-2-text-color);
 }
 
 .button-subtle {

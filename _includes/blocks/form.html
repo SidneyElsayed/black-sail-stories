@@ -35,7 +35,7 @@
               <div class="">
                 {% for box in input.boxes %}
                   <input class="inline font-normal text-featured px-4 py-2 outline-none focus:placeholder-white focus:bg-[var(--bg-secondary-color)]"  type="checkbox" name="{{box.checkbox-option}}" id="{{box.checkbox-option}}">
-                  <label class="block font-normal text-lg" for="{{box.checkbox-option}}">
+                  <label class="font-normal text-lg" for="{{box.checkbox-option}}">
                    {{box.checkbox-option}}
                   </label>
                 {% endfor %}
@@ -61,7 +61,7 @@
 
         </div>
       {% endfor %}
-      <div class="{% if block.button-alignment == 'left' %} text-left {% elsif block.button-alignment == 'center' %} text-center {% elsif block.button-alignment == 'right' %} text-right {% endif %} md:col-span-6">
+      <div class="inline {% if block.button-alignment == 'left' %} text-left {% elsif block.button-alignment == 'center' %} text-center {% elsif block.button-alignment == 'right' %} text-right {% endif %} md:col-span-6">
         <input type="submit" value="{{block.submit-button-text}}" class="button-featured">
       </div>
     </form>

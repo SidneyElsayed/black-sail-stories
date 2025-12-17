@@ -506,6 +506,14 @@ video {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 }
+.my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.my-1 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
 .mb-2 {
     margin-bottom: 0.5rem;
 }
@@ -520,9 +528,6 @@ video {
 }
 .block {
     display: block;
-}
-.inline-block {
-    display: inline-block;
 }
 .inline {
     display: inline;
@@ -608,6 +613,9 @@ video {
 }
 .gap-6 {
     gap: 1.5rem;
+}
+.gap-1 {
+    gap: 0.25rem;
 }
 .gap-x-32 {
     -moz-column-gap: 8rem;
@@ -1009,15 +1017,14 @@ a {
 
 /* Button Classes */
 
-.button {
-    border: 1px solid var(--featured-color);
-    color: var(--featured-color);
+.button-1 {
+  background-color: var(--button-1-bg);
+  color: var(--button-1-text-color);
 }
 
-.button-featured {
-    background-color: var(--featured-color);
-    color: var(--text-color);
-    display: block;
+.button-2 {
+  background-color: var(--button-2-bg);
+  color: var(--button-2-text-color);
 }
 
 .button-subtle {
