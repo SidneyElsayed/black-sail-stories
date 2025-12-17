@@ -165,7 +165,7 @@ a {
 }
 
 .button-subtle {
-  color: var(--bg-secondary-color);
+  color: var(--featured-color);
 }
 
 .button-subtle:hover {
