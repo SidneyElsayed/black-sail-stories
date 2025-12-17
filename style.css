@@ -127,26 +127,40 @@ a {
   
   p a {
       text-decoration: none;
-      color: var(--medium-text);
+      color: var(--featured-color);
       font-weight: 700;
       border-bottom: 2px solid;
       display: inline-block;
   }
   
   p a:hover { 
-    color: var(--featured-text); 
+    color: var(--fbutton-1-bg); 
   }
 
 /* Button Classes */
 
 .button-1 {
   background-color: var(--button-1-bg);
+  border: 1px solid var(--button-1-bg);
   color: var(--button-1-text-color);
+}
+
+.button-1:hover {
+  background-color: var(--button-1-text-color);
+  border: 1px solid var(--button-1-bg);
+  color: var(--button-1-bg);
 }
 
 .button-2 {
   background-color: var(--button-2-bg);
+  border: 1px solid var(--button-2-bg);
   color: var(--button-2-text-color);
+}
+
+.button-2:hover {
+  background-color: var(--button-2-text-color);
+  border: 1px solid var(--button-2-bg);
+  color: var(--button-2-bg);
 }
 
 .button-subtle {

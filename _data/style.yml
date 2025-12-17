@@ -1,37 +1,75 @@
 schemes-colors:
-  - scheme_name: base
-    bg-color: '#fbf9f7'
-    bg-secondary-color: '#eae0d5'
+  - scheme_name: base-blue-featured
+    bg-color: '#EAE0D5'
     featured-color: '#3f5e6d'
     text-color: '#22333b'
-    button-1-bg-color: '#0f2343'
-    button-1-text-color: '#f7fbfd'
-    button-2-bg-color: '#bdcd36'
-    button-2-text-color: '#0f2343'
-  - scheme_name: dark
+    button-1-bg-color: '#3f5e6d'
+    button-1-text-color: '#EAE0D5'
+    button-2-bg-color: '#22333b'
+    button-2-text-color: '#EAE0D5'
+  - scheme_name: base-brown-featured
+    bg-color: '#EAE0D5'
+    featured-color: '#7D6A53'
+    text-color: '#22333b'
+    button-1-bg-color: '#7D6A53'
+    button-1-text-color: '#EAE0D5'
+    button-2-bg-color: '#22333b'
+    button-2-text-color: '#EAE0D5'
+  - scheme_name: dark-navy
     bg-color: '#22333B'
-    bg-secondary-color: '#3F5E6D'
     featured-color: '#D7C5B1'
-    text-color: '#FBF9F7'
-    button-1-bg-color: '#3F5E6D'
-    button-1-text-color: '#f7fbfd'
+    text-color: '#EAE0D5'
+    button-1-bg-color: '#b5936d'
+    button-1-text-color: '#22333B'
     button-2-bg-color: '#D7C5B1'
-    button-2-text-color: '#0f2343'
+    button-2-text-color: '#22333B'
   - scheme_name: featured
     bg-color: '#3f5e6d'
-    bg-secondary-color: '#22333b'
     featured-color: '#b5936d'
-    text-color: '#eae0d5'
-    button-1-bg-color: '#0f2343'
-    button-1-text-color: '#f7fbfd'
-    button-2-bg-color: '#bdcd36'
-    button-2-text-color: '#0f2343'
+    text-color: '#EAE0D5'
+    button-1-bg-color: '#22333B'
+    button-1-text-color: '#EAE0D5'
+    button-2-bg-color: '#EAE0D5'
+    button-2-text-color: '#3f5e6d'
+  - scheme_name: dark-brown
+    bg-color: '#403A34'
+    featured-color: '#B5936D'
+    text-color: '#EAE0D5'
+    button-1-bg-color: '#B5936D'
+    button-1-text-color: '#22333B'
+    button-2-bg-color: '#EAE0D5'
+    button-2-text-color: '#403A34'
   - scheme_name: brown
     bg-color: '#7D6A53'
-    bg-secondary-color: '#B5936D'
     featured-color: '#3F5E6D'
     text-color: '#EAE0D5'
-    button-1-bg-color: '#0f2343'
-    button-1-text-color: '#f7fbfd'
-    button-2-bg-color: '#bdcd36'
-    button-2-text-color: '#0f2343'
+    button-1-bg-color: '#22333B'
+    button-1-text-color: '#EAE0D5'
+    button-2-bg-color: '#EAE0D5'
+    button-2-text-color: '#7D6A53'
+  - scheme_name: camel
+    bg-color: '#B5936D'
+    featured-color: '#22333B'
+    text-color: '#EAE0D5'
+    button-1-bg-color: '#22333B'
+    button-1-text-color: '#EAE0D5'
+    button-2-bg-color: '#EAE0D5'
+    button-2-text-color: '#B5936D'
+  - scheme_name: sand
+    bg-color: '#D7C5B1'
+    featured-color: '#7D6A53'
+    text-color: '#22333B'
+    button-1-bg-color: '#7D6A53'
+    button-1-text-color: '#D7C5B1'
+    button-2-bg-color: '#22333B'
+    button-2-text-color: '#D7C5B1'
+
+    #22333B
+    #3f5e6d
+    #403A34
+    #7D6A53
+    #B5936D
+    #D7C5B1
+    #EAE0D5
+    #f7fbfd
+

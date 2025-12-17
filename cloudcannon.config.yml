@@ -242,10 +242,14 @@ _inputs:
     options:
       allow_empty: true
       values:
-        - base
-        - dark
+        - base-blue-featured
+        - base-brown-featured
+        - dark-navy
+        - dark-brown
         - featured
         - brown
+        - camel
+        - sand
     label: Color scheme for the block
     comment: >-
       Choose which background color to use, then the text, button and highlight
