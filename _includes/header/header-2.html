@@ -1,12 +1,12 @@
-<header class="bg-[var(--bg-color)]">
+<header class="bg-[var(--featured-color-dark-navy)]">
   
   <div class="max-width mx-auto">
     <div class="flex justify-between p-4">
       <a href="/index.html">
-        <h1 class="cursive-font text-5xl">Black Sail Editing</h1>
+        <h1 class="cursive-font text-5xl text-[var(--base-color)]">Black Sail Editing</h1>
       </a>
 
-      <nav class="flex justify-center">
+      <nav class="flex justify-center text-[var(--base-color)]">
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
@@ -16,7 +16,7 @@
         <a href="{{link.url}}" class="flex justify-center text-lg p-3 my-5">{{link.text}}</a>
 
         {% if link.sublinks %}
-        <div class="absolute top-16 left-0 bg-[var(--bg-color)] hidden group-hover:block z-20">
+        <div class="absolute top-16 left-0 bg-[var(--featured-color-dark-navy)] hidden group-hover:block z-20">
           {% for sublink in link.sublinks %}
             <a href="{{sublink.url}}" class="px-3 py-2 whitespace-pre block">{{sublink.text}}</a>
           {% endfor %}

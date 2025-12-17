@@ -7,6 +7,16 @@
 <body>
     <!-- Color Scheme Styles -->
     <style>
+        :root {
+            --featured-color-dark-navy: {{site.data.style.featured-color-dark-navy}};
+            --featured-color-navy: {{site.data.style.featured-color-navy}};
+            --featured-color: {{site.data.style.featured-color}};
+            --featured-color-dark-brown: {{site.data.style.featured-color-dark-brown}};
+            --featured-color-medium-brown: {{site.data.style.featured-color-medium-brown}};
+            --featured-color-camel: {{site.data.style.featured-color-camel}};
+            --featured-color-sand: {{site.data.style.featured-color-sand}};
+            --base-color: {{site.data.style.base-color}};
+         }
 
         :root,{% for scheme in site.data.style.schemes-colors %}
             .scheme-{{scheme.scheme_name}} {

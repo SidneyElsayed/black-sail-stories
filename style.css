@@ -27,7 +27,6 @@ section {
 /* Typography */
 body {
     font-family: "Poppins", sans-serif;
-    color: #262626;
 }
 
 .body-font {
@@ -108,13 +107,26 @@ p, li {
 .subtitle         { font-size: 0.8rem; }
 
 /* Basic p & a styles */
+
+p a {
+    text-decoration: none;
+    color: var(--featured-color);
+    font-weight: 700;
+    border-bottom: 2px solid;
+    display: inline-block;
+  }
+
+p a:hover { 
+    color: var(--fbutton-1-bg); 
+  }
+
 a {
     text-decoration: none;
     color: inherit;
   }
   
   a:hover {
-    color: var(--featured-color); 
+    color: var(--featured-color-camel); 
   }
   
   .hover-white a:hover {
@@ -122,20 +134,9 @@ a {
   }
   
   .hover-dark a:hover {
-    color: var(--featured-color-dark); 
+    color: var(--featured-color-dark-navy); 
   }
   
-  p a {
-      text-decoration: none;
-      color: var(--featured-color);
-      font-weight: 700;
-      border-bottom: 2px solid;
-      display: inline-block;
-  }
-  
-  p a:hover { 
-    color: var(--fbutton-1-bg); 
-  }
 
 /* Button Classes */
 
