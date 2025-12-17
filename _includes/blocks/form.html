@@ -13,7 +13,7 @@
         ">
 
           {% if input.label %}
-          <label>
+          <label class="block">
             <h3>{{input.label}} {% if input.required %} * {% endif %} </h3>
           {% endif %}
 
@@ -34,8 +34,9 @@
               {% when 'checkbox' %}
               <div class="">
                 {% for box in input.boxes %}
+                  <input class="inline font-normal text-featured px-4 py-2 outline-none focus:placeholder-white focus:bg-[var(--bg-secondary-color)]"  type="checkbox" name="{{box.checkbox-option}}" id="{{box.checkbox-option}}">
                   <label class="block font-normal text-lg" for="{{box.checkbox-option}}">
-                    <input class="font-normal text-featured px-4 py-2 outline-none focus:placeholder-white focus:bg-[var(--bg-secondary-color)]"  type="checkbox" name="{{box.checkbox-option}}" id="{{box.checkbox-option}}"> {{box.checkbox-option}}
+                   {{box.checkbox-option}}
                   </label>
                 {% endfor %}
               </div>
@@ -100,7 +101,7 @@
     placeholder-text: 612-555-5555
     width: full
     required: false
-  - form-type: checkbox
+  - type: checkbox
     label: >-
       I would be interested in volunteering for the following (check all
       that apply):

@@ -2,8 +2,21 @@
 layout: default
 title: Contact
 blocks:
+- id: photo-banner
+  text-html: <h1><strong>Let's connect</strong></h1>
+  height: 50vh
+  width: 100%
+  horizontal-placement: center
+  vertical-placement: center
+  text-alignment: center
+  image: /images/chest.jpg
+  alt:
+  scheme-name: dark
+  overlay:
+    color:
+    opacity:
 - id: form
-  button-alignment: center
+  button-alignment: right
   submit-button-text: Submit
   inputs:
   - type: text
@@ -30,6 +43,14 @@ blocks:
     placeholder-text: 612-555-5555
     width: full
     required: false
+  - type: checkbox
+    label: >-
+      I would be interested inlearning more about the following (check all that apply):
+    width: full
+    boxes:
+      - checkbox-option: Developmental Editing
+      - checkbox-option: Book Coaching
+      - checkbox-option: Ghostwriting Services
   - type: textarea
     name: Inquiry
     label: Your message here
