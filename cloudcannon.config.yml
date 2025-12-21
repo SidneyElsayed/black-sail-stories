@@ -410,7 +410,7 @@ _structures:
               button-text:
               button-link:
           scheme-name: base
-      - label: cards
+      - label: image text
         value:
           id: image-text
           section-heading_html:
