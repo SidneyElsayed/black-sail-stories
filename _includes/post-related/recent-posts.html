@@ -1,0 +1,24 @@
+<section class="bg-light padded related-posts">
+
+  <h4 class="text-center font-bold"> Recent Posts </h4>
+  
+  <div class="grid grid-cols-3">
+
+    {% for page in site.posts limit:3 %}
+
+  
+        <a href="{{post.url}}" class="col-span-3 md:col-span-1 p-14 post-item">
+          <div class="mb-4 aspect-[5/4]"> 
+            <img src="{{ page.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
+          </div>
+          
+              <span class="post-info">by {{page.author}} | </span> 
+              <span class="post-info"> {{ page.date | date_to_string }} </span>
+          
+              <h5 class="mt-2 featured-font"> {{page.title}} </h5>
+        </a>
+        
+    {% endfor %}
+  </div>
+  
+</section>

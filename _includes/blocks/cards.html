@@ -14,7 +14,7 @@
       <!-- Card Loop -->
       <div class="{% if item.size > 3 %} basis-[30%] shrink-0 {% else %} col-span-3 {% endif %}">
         <div class="">
-          <img class="aspect-square object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
+          <img class="aspect-square {% if item.image-arch %} arch {% endif %} object-cover w-full" src="{{item.image}}" alt="{{item.alt}}">
         </div>
         <div class="p-4">
           <h4 class="py-4">{{item.heading}}</h4>

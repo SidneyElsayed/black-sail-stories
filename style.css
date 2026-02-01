@@ -159,7 +159,7 @@ font-weight: 600;
 }
 
 
-/* Basic p & a styles */
+/* basic p & a styles */
 
 p a {
     text-decoration: none;
@@ -194,8 +194,14 @@ a {
     color: var(--featured-color-dark-navy); 
   }
   
+/* image styles */
+.arch {
+  border-radius: 100% 100% 0px 0px;
+}
 
-/* Button Classes */
+
+
+/* button styles */
 
 .button-1 {
   background-color: var(--button-1-bg);
