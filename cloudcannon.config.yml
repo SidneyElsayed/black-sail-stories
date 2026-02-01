@@ -4,40 +4,28 @@ paths:
   dam_uploads: ''
   dam_static: ''
   collections: ''
-  data: _data
-  layouts: _layouts
-  includes: _includes
 collections_config:
   pages:
     path: ''
-    output: true
-    filter: strict
+    glob:
+      - '*.html'
+    name: Pages
+    icon: data_usage
+    url: /[full_slug]
+    disable_url: false
     description: ''
-    icon: notes
-    _editables:
-    _inputs:
-    _select_data:
-    _structures:
+    _enabled_editors:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-    schemas:
-      default page:
-        path:
-        reorder_inputs: true
-        hide_extra_inputs: false
-        remove_empty_inputs: false
-        remove_extra_inputs: true
-        name:
-        icon: notes
-        preview:
-        _editables:
-        _inputs:
-        _select_data:
-        _structures:
-        create:
-        new_preview_url:
-
+  data:
+    path: _data
+    name: Data
+    icon: data_usage
+    disable_url: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 
 _inputs:
   layout:
