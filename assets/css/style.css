@@ -1141,7 +1141,7 @@ input:focus, textarea:focus {
 /* Cookies Banner Styles */
 #cookie-notice {
   padding: 0.5rem 1rem;
-  z-index: 2;
+  z-index: 10;
   display: none;
   text-align: center;
   position: fixed;
@@ -1149,8 +1149,8 @@ input:focus, textarea:focus {
   right: 1.5rem;
   bottom: 0;
   width: calc(100% - 3rem);
-  background: var(--feature-color-navy);
-  color: var(--base-color);
+  background: var(--featured-color-navy);
+  color: var(--featured-color-sand);
   font-family: inherit;
   line-height: 1.4rem;
 }
@@ -1161,13 +1161,22 @@ input:focus, textarea:focus {
   margin-left: 0.5rem;
 }
 #cookie-notice .button-subtle {
-opacity: 0.5;
+color: var(--featured-color-medium-brown);
 }
+
+#cookie-notice .button-subtle:hover {
+  color: var(--featured-color-camel);
+  }
+
 #close-cookie-banner {
+color: var(--featured-color-sand);
 padding: 1rem;
 cursor: pointer;
 font-size: 0.8rem;
-opacity: 0.5
+}
+
+#close-cookie-banner:hover {
+  color: var(--featured-color-camel);
 }
 
 /* Back to Top Grid */
