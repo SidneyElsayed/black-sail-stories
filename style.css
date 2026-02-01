@@ -106,6 +106,59 @@ p, li {
 
 .subtitle         { font-size: 0.8rem; }
 
+/* ----------- Navigation/Hamburger Button -------------- */
+.hamburger-button {
+  color: var(--base-color);
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 0.8;
+  position: relative;
+  z-index: 30;
+}
+
+.hamburger-button:hover {
+color: var(--featured-color-camel)
+}
+
+/* Styles when the hamburger button is active  */
+.hamburger-button.active {
+color: var(--featured-color-camel);
+}
+
+.hamburger-button.active:hover {
+  color: var(--base-color);
+  }
+
+
+.mobile-menu {
+display: none; 
+background-color: var(--featured-color-dark-navy);
+padding: 5%;
+padding-top: 2rem;
+position: fixed;
+z-index:3;
+top: 0;
+bottom: 0;
+right: 0;
+}
+
+.mobile-menu a {
+text-decoration: none; 
+color: inherit; 
+padding: 2%;
+display: block;
+}
+
+.mobile-menu a:hover {
+color: var(--featured-color-camel)
+}
+
+.mobile-menu .title {
+color: var(--base-color);
+font-weight: 600;
+}
+
+
 /* Basic p & a styles */
 
 p a {

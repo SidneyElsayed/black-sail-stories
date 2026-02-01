@@ -1,19 +1,26 @@
 <header class="bg-[var(--featured-color-dark-navy)]">
   
   <div class="max-width mx-auto">
-    <div class="flex justify-between p-4">
-      <a href="/index.html">
-        <h1 class="cursive-font text-5xl text-[var(--base-color)]">Black Sail Editing</h1>
-      </a>
 
-      <nav class="flex justify-center text-[var(--base-color)]">
+    <!-- desktop menu -->
+    <div class="flex justify-between p-4">
+
+      <!-- logo -->
+      <div>
+        <a href="/index.html">
+          <h1 class="cursive-font text-5xl text-[var(--base-color)]">Black Sail Editing</h1>
+        </a>
+      </div>
+
+      <!-- links -->
+      <nav class="hidden md:flex md:content-center justify-center text-[var(--base-color)]">
       {% for link in site.data.navigation.header-links %}
 
         {% if link.sublinks %}
-          <span class="relative group">
+          <span class="relative group md:content-center">
         {% endif %}
         
-        <a href="{{link.url}}" class="flex justify-center text-lg p-3 my-5">{{link.text}}</a>
+        <a href="{{link.url}}" class="flex justify-center md:content-center text-lg p-3 my-5">{{link.text}}</a>
 
         {% if link.sublinks %}
         <div class="absolute top-16 left-0 bg-[var(--featured-color-dark-navy)] hidden group-hover:block z-20">
@@ -27,7 +34,23 @@
       {% endfor %}
       </nav>
 
+      <!-- hamburger button -->
+      <div class="md:hidden">
+        <a class="hamburger-button md:hidden"> &#9776; </a>
+      </div>
+
     </div>
+    <!-- end desktop menu -->
+
+    <!-- mobile menu -->
+    <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] max-w-56">
+      <nav class="relative">
+        {% for link in site.data.navigation.header-links %}
+        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
+        {% endfor %}
+      </nav>
+    </div>
+
   </div>
 
 </header>
