@@ -494,6 +494,9 @@ video {
 .col-span-6 {
     grid-column: span 6 / span 6;
 }
+.col-span-5 {
+    grid-column: span 5 / span 5;
+}
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -1166,6 +1169,12 @@ input:focus, textarea:focus {
 @media (min-width: 640px) {
     .sm\:col-span-2 {
         grid-column: span 2 / span 2;
+    }
+    .sm\:col-span-3 {
+        grid-column: span 3 / span 3;
+    }
+    .sm\:col-span-1 {
+        grid-column: span 1 / span 1;
     }
     .sm\:block {
         display: block;
