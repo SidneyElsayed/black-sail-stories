@@ -522,6 +522,9 @@ video {
 .mt-2 {
     margin-top: 0.5rem;
 }
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
 .block {
     display: block;
 }
@@ -1068,6 +1071,10 @@ a {
   .hover-white a:hover {
     color: white; 
   }
+
+  .hover-camel a:hover {
+    color: var(--featured-color-camel);
+  }
   
   .hover-dark a:hover {
     color: var(--featured-color-dark-navy); 
@@ -1106,6 +1113,10 @@ a {
 
 .button-subtle:hover {
   color: var(--text-color);
+}
+
+.button-subtle-dark-bg {
+  color: var(--base-color);
 }
 
 /* Form Styles */

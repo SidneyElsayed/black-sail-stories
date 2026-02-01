@@ -185,6 +185,10 @@ a {
   .hover-white a:hover {
     color: white; 
   }
+
+  .hover-camel a:hover {
+    color: var(--featured-color-camel);
+  }
   
   .hover-dark a:hover {
     color: var(--featured-color-dark-navy); 
@@ -223,6 +227,10 @@ a {
 
 .button-subtle:hover {
   color: var(--text-color);
+}
+
+.button-subtle-dark-bg {
+  color: var(--base-color);
 }
 
 /* Form Styles */
