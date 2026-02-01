@@ -491,11 +491,11 @@ video {
 .col-span-4 {
     grid-column: span 4 / span 4;
 }
-.col-span-6 {
-    grid-column: span 6 / span 6;
-}
 .col-span-5 {
     grid-column: span 5 / span 5;
+}
+.col-span-6 {
+    grid-column: span 6 / span 6;
 }
 .mx-auto {
     margin-left: auto;
@@ -600,9 +600,6 @@ video {
 }
 .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-.grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .justify-center {
     justify-content: center;
@@ -1141,6 +1138,37 @@ input:focus, textarea:focus {
     background-color: var(--featured-color);
 }
 
+/* Cookies Banner Styles */
+#cookie-notice {
+  padding: 0.5rem 1rem;
+  z-index: 2;
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0;
+  width: calc(100% - 3rem);
+  background: var(--feature-color-navy);
+  color: var(--base-color);
+  font-family: inherit;
+  line-height: 1.4rem;
+}
+#cookie-notice a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+#cookie-notice .button-subtle {
+opacity: 0.5;
+}
+#close-cookie-banner {
+padding: 1rem;
+cursor: pointer;
+font-size: 0.8rem;
+opacity: 0.5
+}
 
 /* Back to Top Grid */
 .major-funders-grid {
@@ -1167,14 +1195,11 @@ input:focus, textarea:focus {
     display: block;
 }
 @media (min-width: 640px) {
-    .sm\:col-span-2 {
-        grid-column: span 2 / span 2;
-    }
-    .sm\:col-span-3 {
-        grid-column: span 3 / span 3;
-    }
     .sm\:col-span-1 {
         grid-column: span 1 / span 1;
+    }
+    .sm\:col-span-2 {
+        grid-column: span 2 / span 2;
     }
     .sm\:block {
         display: block;

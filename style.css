@@ -252,6 +252,37 @@ input:focus, textarea:focus {
     background-color: var(--featured-color);
 }
 
+/* Cookies Banner Styles */
+#cookie-notice {
+  padding: 0.5rem 1rem;
+  z-index: 2;
+  display: none;
+  text-align: center;
+  position: fixed;
+  left: 1.5rem;
+  right: 1.5rem;
+  bottom: 0;
+  width: calc(100% - 3rem);
+  background: var(--feature-color-navy);
+  color: var(--base-color);
+  font-family: inherit;
+  line-height: 1.4rem;
+}
+#cookie-notice a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+#cookie-notice .button-subtle {
+opacity: 0.5;
+}
+#close-cookie-banner {
+padding: 1rem;
+cursor: pointer;
+font-size: 0.8rem;
+opacity: 0.5
+}
 
 /* Back to Top Grid */
 .major-funders-grid {
