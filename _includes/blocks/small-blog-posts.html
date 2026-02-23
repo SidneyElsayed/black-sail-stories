@@ -1,24 +1,24 @@
-<div class="grid grid-cols-2 py-6">
+<div class="py-6 px-10 content-center">
 
   {% for post in site.posts limit:100 %}
 
 
-  <div class="grid grid-cols-5 col-span-2 md:col-span-1 post-item p-10">
+  <div class="grid grid-cols-3 gap-x-6 post-item px-20 py-10 self-center">
       <!-- Clickable Image -->
-      <div class="col-span-2 aspect-square self-center">
+      <div class="col-span-3 md:col-span-1 aspect-square self-center">
           <a class="" href="{{ post.url }}">
-              <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3">
+              <img src="{{ post.featured_image }}" class="inset-0 h-full w-full object-cover object-center {% if block.image-arch %} arch {% endif %}">
           </a>
       </div>
 
-      <div class="col-span-3">
+      <div class="col-span-3 md:col-span-2 {% if block.text-placement == 'top' %} self-start {% elsif block.text-placement == 'center' %} self-center {% elsif block.text-placement == 'bottom' %} self-end {% endif %}">
       <!-- Clickable Tags -->
       {% for item in post.categories limit: post.categories-shown %}
           <a href="/{{item | replace:' ','-'}}" class="tag"> {{ item }}</a>
       {% endfor %}
           <!-- Clickable Text -->
           <a class="" href="{{ post.url }}">
-              <h4 class="mt-2 mb-4 featured-font"> {{ post.title }} </h4>
+              <h4 class="mt-4 md:mt-2 mb-4 serif-font"> {{ post.title }} </h4>
               <p class="subtitle hidden sm:block"> {{ post.description }} </p>
           </a>
   

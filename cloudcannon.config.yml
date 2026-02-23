@@ -439,6 +439,8 @@ _structures:
       - label: small blog posts
         value:
           id: small-blog-posts
+          text-placement: center
+          image-arch: true
           scheme-name: base
   
   

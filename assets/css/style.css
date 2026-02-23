@@ -528,6 +528,12 @@ video {
 .mt-2 {
     margin-top: 0.5rem;
 }
+.mt-4 {
+    margin-top: 1rem;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
 .block {
     display: block;
 }
@@ -601,6 +607,9 @@ video {
 .grid-cols-5 {
     grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.content-center {
+    align-content: center;
+}
 .justify-center {
     justify-content: center;
 }
@@ -623,8 +632,16 @@ video {
     -moz-column-gap: 8rem;
          column-gap: 8rem;
 }
+.gap-x-6 {
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+}
 .gap-y-10 {
     row-gap: 2.5rem;
+}
+.gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
 }
 .self-start {
     align-self: flex-start;
@@ -683,9 +700,6 @@ video {
     -o-object-position: center;
        object-position: center;
 }
-.p-10 {
-    padding: 2.5rem;
-}
 .p-14 {
     padding: 3.5rem;
 }
@@ -708,6 +722,10 @@ video {
     padding-left: 0px;
     padding-right: 0px;
 }
+.px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
 .px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -715,6 +733,10 @@ video {
 .px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+.px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 .px-3 {
     padding-left: 0.75rem;
@@ -732,6 +754,10 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
 }
+.py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
 .py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -747,10 +773,6 @@ video {
 .py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
-}
-.py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 .py-6 {
     padding-top: 1.5rem;
@@ -912,23 +934,19 @@ section {
 
 /* Typography */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .body-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .serif-font {
-    font-family: "DM Serif Display", sans-serif;
+    font-family: "Bitter", sans-serif;
 }
 
 .cursive-font {
     font-family: "Babylonica", cursive;
-}
-
-footer .serif-font {
-  font-size: 30px;
 }
 
 footer .body-font {
@@ -986,7 +1004,7 @@ h6 { font-size: 1.1rem; }
 p, li {
   line-height: 1.8; 
   margin-bottom: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 
@@ -1246,6 +1264,9 @@ font-size: 0.8rem;
     }
     .md\:col-span-8 {
         grid-column: span 8 / span 8;
+    }
+    .md\:mt-2 {
+        margin-top: 0.5rem;
     }
     .md\:flex {
         display: flex;

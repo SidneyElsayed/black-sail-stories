@@ -10,11 +10,11 @@
         </a>
       </div>
       <!-- Navigation Links -->
-      <nav class="p-4 grid grid-cols-3 col-span-5 md:col-span-3 justify-between gap-x-32 gap-y-10 md:gap-10 lg:gap-8">
+      <nav class="p-4 grid grid-cols-3 col-span-5 md:col-span-3 justify-between gap-x-12 gap-y-10 md:gap-10 lg:gap-8">
         <!-- Link Group Loop -->
         {% for menu in site.data.navigation.footer-links %}
         <div class="col-span-3 sm:col-span-1">
-          <h5 class="font-semibold leading-8">{{menu.heading}}</h5>
+          <h4 class="mb-0 serif-font font-semibold leading-8">{{menu.heading}}</h4>
           {% for link in menu.links %}
           <a href="{{link.url}}" class="block leading-7">{{link.text}}</a>
           {% endfor %}

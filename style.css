@@ -26,23 +26,19 @@ section {
 
 /* Typography */
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .body-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .serif-font {
-    font-family: "DM Serif Display", sans-serif;
+    font-family: "Bitter", sans-serif;
 }
 
 .cursive-font {
     font-family: "Babylonica", cursive;
-}
-
-footer .serif-font {
-  font-size: 30px;
 }
 
 footer .body-font {
@@ -100,7 +96,7 @@ h6 { font-size: 1.1rem; }
 p, li {
   line-height: 1.8; 
   margin-bottom: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
 }
 
