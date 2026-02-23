@@ -3,7 +3,7 @@
 
   {% if block.section-heading_html %}
 
-  <div class="px-8 sm:px-16 pb-10">{{block.section-heading_html}}</div>
+  <div class="px-8 sm:px-16 pb-10 {% if block.text-alignment == 'left' %} text-left {% elsif block.text-alignment == 'center' %} text-center {% elsif block.text-alignment == 'right' %} text-right {% endif %}">{{block.section-heading_html}}</div>
 
   {% endif %}
 

@@ -8,7 +8,7 @@
 
   
         <a href="{{post.url}}" class="col-span-3 md:col-span-1 p-4 post-item">
-          <div class="mb-4 aspect-[5/4]"> 
+          <div class="mb-4 aspect-square"> 
             <img src="{{ page.featured_image }}" class="inset-0 h-full w-full object-cover object-center pr-3 arch">
           </div>
           
@@ -16,6 +16,7 @@
               <span class="post-info"> {{ page.date | date_to_string }} </span>
           
               <h5 class="mt-2 serif-font"> {{page.title}} </h5>
+              <p class="subtitle hidden sm:block"> {{ page.description }} </p>
         </a>
         
     {% endfor %}

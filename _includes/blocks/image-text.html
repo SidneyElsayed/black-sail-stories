@@ -18,7 +18,7 @@
   
   <div class="grid grid-cols-2">
     <!-- Image -->
-    <div class="col-span-2 lg:col-span-1 relative lg:mr-12 aspect-square"> 
+    <div class="col-span-2 lg:col-span-1 relative lg:mr-12 aspect-[4/5]"> 
         <img class="absolute inset-0 h-full w-full z-10 object-cover object-center {% if block.image-arch %} arch {% endif %}" style="object-position: {{block.image-horizontal-focal-point}} {{block.image-vertical-focal-point}}" src="{{block.image}}" alt="{{block.alt | default: block.caption}}">
     </div>
 
