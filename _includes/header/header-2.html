@@ -7,8 +7,8 @@
 
       <!-- logo -->
       <div>
-        <a href="/index.html">
-          <h1 class="cursive-font text-5xl text-[var(--base-color)]">Black Sail Editing</h1>
+        <a href="/index.html" class="text-[var(--base-color)]">
+          <h1 class="cursive-font text-5xl">Black Sail Editing</h1>
         </a>
       </div>
 
@@ -43,12 +43,14 @@
     <!-- end desktop menu -->
 
     <!-- mobile menu -->
-    <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] max-w-56">
-      <nav class="relative">
-        {% for link in site.data.navigation.header-links %}
-        <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
-        {% endfor %}
-      </nav>
+    <div class="md:hidden">
+      <div class="mobile-menu text-left overflow-y-scroll max-h-[100vh] w-1/2">
+        <nav class="relative">
+          {% for link in site.data.navigation.header-links %}
+          <a href="{{link.url}}" class=" p-2 my-4 featured-font">{{link.text}}</a>
+          {% endfor %}
+        </nav>
+      </div>
     </div>
 
   </div>

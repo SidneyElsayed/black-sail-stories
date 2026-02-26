@@ -102,6 +102,34 @@ p, li {
 
 .subtitle         { font-size: 0.8rem; }
 
+/* List Styles (ol/ul) */
+
+ol, ul {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+ul li {
+  list-style-type: disc;
+
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+li {
+  display: list-item;
+  list-style-position: inside;
+  vertical-align: text-top;
+  padding-left: 1.5rem;
+}
+
+li p {
+
+  padding-bottom: 0.6rem;
+}
+
 /* ----------- Navigation/Hamburger Button -------------- */
 .hamburger-button {
   color: var(--base-color);
@@ -140,7 +168,7 @@ right: 0;
 
 .mobile-menu a {
 text-decoration: none; 
-color: inherit; 
+color: var(--base-color); 
 padding: 2%;
 display: block;
 }

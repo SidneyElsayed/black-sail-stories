@@ -2,9 +2,9 @@
 <aside class="col-span-12 md:col-span-4 lg:col-span-3 text-[var(--base-color)]">
 
   {% for info in site.data.sidebar.info-section %}
-  <div class="bg-[var(--featured-color)] arch">
+  <div class="bg-[var(--featured-color)] {% if info.arch %} arch {% endif %}">
       <div>
-        <img src="{{info.image}}" class="arch">
+        <img src="{{info.image}}" class="{% if info.arch %} arch {% endif %}">
       </div>
 
       <!-- about me paragraph -->
