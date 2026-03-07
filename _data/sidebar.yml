@@ -1,6 +1,13 @@
 info-section:
   - image: /images/sydney-about-me.jpeg
     arch: true
-    description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit
+    description: >-
+      Welcome to my Black Sail Editing. Great stories feel effortless when you
+      read them, but in truth, there's so much happening beneath the surface. I
+      love working in that space, looking at the structure, plot, and characters
+      that shape a manuscript and helping writers bring those elements into
+      focus. As a developmental editor, I focus on the big picture and help you
+      refine your story so it is clear, engaging, and emotionally satisfying for
+      your readers.
     link: /about
     button-text: More about me
