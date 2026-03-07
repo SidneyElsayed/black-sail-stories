@@ -7,11 +7,11 @@ header-links:
     url: /services
     sublinks:
       - text: Developmental Editing
-        url: /services#section-1
-      - text: Book Coaching
         url: /services#section-2
-      - text: Ghost Writing
+      - text: Book Coaching
         url: /services#section-3
+      - text: Ghost Writing
+        url: /services#section-4
   - text: Contact Us
     url: /contact
   - text: Blog
@@ -22,13 +22,13 @@ footer-links:
       - text: Manuscript Evaluation
         url: /
       - text: Developmental Editing
-        url: /
+        url: /services#section-2
       - text: Book Coaching
-        url: /
+        url: /services#section-3
   - heading: Done For You
     links:
       - text: Ghost Writing
-        url: /
+        url: /services#section-4
       - text: Custom Projects
         url: /
       - text: Retainer Packages
