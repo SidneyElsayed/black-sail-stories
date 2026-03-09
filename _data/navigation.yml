@@ -41,7 +41,7 @@ footer-links:
         url: /services#section-7
   - heading: About
     links:
-      - text: About Us
+      - text: About
         url: /about
       - text: Blog
         url: /blog
