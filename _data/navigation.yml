@@ -12,8 +12,12 @@ header-links:
         url: /services#section-3
       - text: Ghost Writing
         url: /services#section-4
-      - text: Developmental Editing
+      - text: Manuscript Evaluation
         url: /services#section-5
+      - text: Custom Projects
+        url: /services#section-6
+      - text: Retainer Packages
+        url: /services#section-7
   - text: Contact
     url: /contact
   - text: Blog
