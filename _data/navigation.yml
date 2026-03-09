@@ -14,7 +14,7 @@ header-links:
         url: /services#section-4
       - text: Developmental Editing
         url: /services#section-5
-  - text: Contact Us
+  - text: Contact
     url: /contact
   - text: Blog
     url: /blog
@@ -22,7 +22,7 @@ footer-links:
   - heading: Develop Your Skills
     links:
       - text: Manuscript Evaluation
-        url: /
+        url: /services#section-5
       - text: Developmental Editing
         url: /services#section-2
       - text: Book Coaching
@@ -32,16 +32,16 @@ footer-links:
       - text: Ghost Writing
         url: /services#section-4
       - text: Custom Projects
-        url: /
+        url: /services#section-6
       - text: Retainer Packages
-        url: /
+        url: /services#section-7
   - heading: About
     links:
       - text: About Us
         url: /about
       - text: Blog
         url: /blog
-      - text: Contact Us
+      - text: Contact
         url: /contact
 footer-contact:
   heading: Black Sail Editing
